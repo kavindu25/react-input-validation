@@ -1,4 +1,4 @@
-import useInput from "../hooks/use-hooks";
+import useInput from "../hooks/use-input";
 
 const isNotEmpty = (value) => value.trim() !== "";
 const isEmail = (value) =>

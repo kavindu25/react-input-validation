@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useInput from "../hooks/use-hooks";
+import useInput from "../hooks/use-input";
 const SimpleInput = (props) => {
   // const nameInputRef = useRef();
   const {
