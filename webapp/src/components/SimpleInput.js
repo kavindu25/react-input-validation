@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useInput from "../hooks/use-input";
+import useInput2 from "../hooks/use-input2";
 const SimpleInput = (props) => {
   // const nameInputRef = useRef();
   const {
@@ -9,7 +9,7 @@ const SimpleInput = (props) => {
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
     resetValue: resetNameInput,
-  } = useInput((value) => value.trim() !== "");
+  } = useInput2((value) => value.trim() !== "");
 
   const {
     value: enteredEmail,
@@ -18,7 +18,7 @@ const SimpleInput = (props) => {
     valueChangeHandler: emailChangeHandler,
     inputBlurHandler: emailBlurHandler,
     resetValue: resetEmailInput,
-  } = useInput((value) =>
+  } = useInput2((value) =>
     /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)
   );
 
